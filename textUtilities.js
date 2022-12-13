@@ -7,3 +7,11 @@ var expect = require('chai').expect;
 // 2. Now use expect method to write some expectations. Pass in a value we want to use for comparion and chain some special chai methods to tell chai what we expect that value to be.
 // Expect true to be true: 
 expect(true).to.be.true;
+
+// Fix 'titleCase undefined'. And pass in 'title'
+function titleCase(title){
+  return title;
+}
+
+// Write expectation for titleCase function - we expect to get back a string
+expect(titleCase('lord of the rings')).to.be.a('string')
