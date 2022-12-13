@@ -10,7 +10,7 @@ expect(true).to.be.true;
 
 // Fix 'titleCase undefined'. And pass in 'title'
 function titleCase(title){
-  return title;
+  return title.toUpperCase();
 }
 
 // Expectation #1: titleCase function - expect to get back a string
