@@ -12,12 +12,12 @@ var expect = require('chai').expect;
 
 // The code we will write: 
 function titleCase(title){
-  var words = title.split('');
+  var words = title.split(' ');
   // Make a new array 'titleCasedWords' bc you'll eventually need to join the letters back together
   var titleCasedWords = words.map(function(word){
     return word[0].toUpperCase() + word.substring(1);  
   });
-  return titleCasedWords.join();
+    return titleCasedWords.join();
   // capitalize the first character of the title - move to map callback above:
   // return title[0].toUpperCase() + title.substring(1);
 }
