@@ -15,6 +15,8 @@ function titleCase(title){
 
 // Expectation #1: titleCase function - expect to get back a string
 expect(titleCase('lord of the rings')).to.be.a('string')
+// Solve the smalleset piece of the problem:
+expect(titleCase('a')).to.equal('A');
 
 // Expectation #2: titleCase function -
 expect(titleCase('lord of the rings')).to.equal('Lord of the Rings');
